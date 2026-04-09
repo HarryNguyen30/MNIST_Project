@@ -1,0 +1,26 @@
+:root {
+  --white: #ffffff;
+  --ink-black: #00171f;
+  --deep-space-blue: #003459;
+  --cerulean: #007ea7;
+  --fresh-sky: #00a8e8;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 980px;
+  margin: 24px auto;
+  padding: 0 16px;
+  color: var(--ink-black);
+  background: var(--white);
+}
+
+h1 {
+  margin-bottom: 8px;
+  color: var(--deep-space-blue);
+}
+
+.muted {
+  color: var(--deep-space-blue);
+  margin-bottom: 18px;
+}

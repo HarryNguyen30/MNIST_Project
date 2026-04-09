@@ -1,0 +1,110 @@
+.card {
+  border: 1px solid #d8e8ef;
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 14px;
+  background: var(--white);
+  box-shadow: 0 6px 16px rgba(0, 52, 89, 0.08);
+}
+
+.row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.controls {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+button {
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--cerulean);
+  color: var(--white);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background: var(--fresh-sky);
+}
+
+button.secondary {
+  background: var(--deep-space-blue);
+}
+
+button.secondary:hover {
+  background: var(--cerulean);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.pred {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.ok {
+  color: var(--deep-space-blue);
+}
+
+.err {
+  color: #b91c1c;
+  white-space: pre-wrap;
+}
+
+img {
+  border: 1px solid #d8e8ef;
+  border-radius: 8px;
+  max-width: 160px;
+  max-height: 160px;
+  object-fit: contain;
+}
+
+.top3 {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--ink-black);
+}
+
+canvas {
+  border: 2px solid var(--cerulean);
+  border-radius: 8px;
+  image-rendering: pixelated;
+  touch-action: none;
+  box-shadow: inset 0 0 0 2px rgba(0, 126, 167, 0.08);
+}
+
+details {
+  margin-top: 12px;
+}
+
+summary {
+  color: var(--deep-space-blue);
+  cursor: pointer;
+}
+
+input[type="file"] {
+  border: 1px solid #d8e8ef;
+  border-radius: 8px;
+  padding: 8px;
+  color: var(--ink-black);
+  background: var(--white);
+}
